@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    float a;
+    int sq,po,bas;
+    scanf("%f",&a);
+    scanf("%d",&sq);
+    scanf("%d",&bas);
+    scanf("%d",&po);
+    printf("%d\n",(int)floor(a));
+    printf("%d\n",(int)ceil(a));
+    printf("%d\n",(int)sqrt(sq));
+    printf("%d",(int)pow(bas,po));
+      return 0;
+}
