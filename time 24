@@ -1,0 +1,74 @@
+#include <stdio.h>
+2
+
+3
+#include <string.h>
+4
+
+5
+#include <math.h>
+6
+
+7
+#include <stdlib.h>
+8
+
+9
+int main() {
+10
+
+11
+    
+12
+
+13
+    int hr,min,sec;
+14
+
+15
+    scanf("%d",&hr);
+16
+
+17
+    scanf("%d",&min);
+18
+
+19
+    scanf("%d",&sec);
+20
+
+21
+    min=min+sec/60;
+22
+
+23
+    sec=sec%60;
+24
+
+25
+    hr=hr+min/60;
+26
+
+27
+    min=min%60;
+28
+
+29
+    printf("Total Number of hours is %d\n",hr);
+30
+
+31
+    printf("Total Number of minutes is %d\n",min);
+32
+
+33
+    printf("Total Number of seconds is %d\n",sec);
+34
+
+35
+    return 0;
+36
+
+37
+}
+38
