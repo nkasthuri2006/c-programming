@@ -1,0 +1,60 @@
+#include <stdio.h>
+2
+
+3
+int main() {
+4
+
+5
+    int x1, y1, x2, y2;
+6
+
+7
+    float mid_x, mid_y;
+8
+
+9
+
+10
+    scanf("%d", &x1);
+11
+
+12
+    scanf("%d", &y1);
+13
+
+14
+    scanf("%d", &x2);
+15
+
+16
+    scanf("%d", &y2);
+17
+
+18
+    
+19
+
+20
+    mid_x = (x1 + x2) / 2.0;
+21
+
+22
+    mid_y = (y1 + y2) / 2.0;
+23
+
+24
+
+25
+
+26
+    printf("Binoy's house is located at (%.1f,%.1f)\n", mid_x, mid_y);
+27
+
+28
+    return 0;
+29
+
+30
+}
+31
