@@ -1,0 +1,61 @@
+#include <stdio.h>
+3
+
+4
+int main() {
+5
+
+6
+    int dead, injured, safe;
+7
+
+8
+    
+9
+
+10
+    scanf("%d", &dead);
+11
+
+12
+    scanf("%d", &injured);
+13
+
+14
+    scanf("%d", &safe);
+15
+
+16
+    
+17
+
+18
+    printf("TSUNAMI REPORT OF JAPAN\n");
+19
+
+20
+    printf("The number of people\n");
+21
+
+22
+    printf("1)Dead:%d\n", dead);
+23
+
+24
+    printf("2)Injured:%d\n", injured);
+25
+
+26
+    printf("3)Safe:%d\n", safe);
+27
+
+28
+    printf("Please help the people who are suffering!!!\n");
+29
+
+30
+    return 0;
+31
+
+32
+}
