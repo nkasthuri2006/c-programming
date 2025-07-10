@@ -1,0 +1,130 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+
+6
+int main() {
+7
+
+8
+    char name[50];
+9
+
+10
+    int m1, m2, m3, m4, m5;
+11
+
+12
+    int total;
+13
+
+14
+    float average;
+15
+
+16
+
+17
+
+18
+    scanf("%s", name);
+19
+
+20
+    scanf("%d%d%d%d%d", &m1, &m2, &m3, &m4, &m5);
+21
+
+22
+
+23
+
+24
+    total = m1 + m2 + m3 + m4 + m5;
+25
+
+26
+    average = total / 5.0;
+27
+
+28
+
+29
+
+30
+    printf("Name of the Student:%s\n", name);
+31
+
+32
+    printf("Total Mark:%d\n", total);
+33
+
+34
+    printf("Average Mark:%.1f\n", average);
+35
+
+36
+    if (average == 100)
+37
+
+38
+        printf("Grade Mark:S\n");
+39
+
+40
+    else if (average >= 90)
+41
+
+42
+        printf("Grade Mark:A\n");
+43
+
+44
+    else if (average >= 80)
+45
+
+46
+        printf("Grade Mark:B\n");
+47
+
+48
+    else if (average >= 70)
+49
+
+50
+        printf("Grade Mark:C\n");
+51
+
+52
+    else if (average >= 60)
+53
+
+54
+        printf("Grade Mark:D\n");
+55
+
+56
+    else if (average >= 50)
+57
+
+58
+        printf("Grade Mark:E\n");
+59
+
+60
+    else
+61
+
+62
+        printf("Grade Mark:Fail\n");
+63
+
+64
+    return 0;
+65
+}
+66
