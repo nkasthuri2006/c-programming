@@ -1,0 +1,86 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+
+6
+int main() {
+7
+
+8
+
+9
+    char name[50];
+10
+
+11
+    int arrears;
+12
+
+13
+    int cgpa;
+14
+
+15
+
+16
+
+17
+    scanf("%s", name);
+18
+
+19
+    scanf("%d", &arrears);
+20
+
+21
+    scanf("%d", &cgpa);
+22
+
+23
+    
+24
+
+25
+    printf("Name of the Student:%s\n", name);
+26
+
+27
+
+28
+
+29
+    if ((arrears == 1 && cgpa > 70) || ((arrears == 1 || arrears == 2) && cgpa > 75)) {
+30
+
+31
+        printf("%s is Eligible for Placement\n", name);
+32
+
+33
+    } else {
+34
+
+35
+        printf("%s is Not Eligible for Placement\n", name);
+36
+
+37
+    }
+38
+
+39
+    return 0;
+40
+
+41
+}
+42
+    
+43
+
+44
