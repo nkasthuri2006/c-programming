@@ -1,0 +1,110 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+
+6
+
+7
+
+8
+int main() {
+9
+
+10
+    int balance, choice, amount;
+11
+
+12
+    
+13
+
+14
+    scanf("%d", &balance);
+15
+
+16
+    scanf("%d", &choice);
+17
+
+18
+    switch(choice) {
+19
+
+20
+        case 1:
+21
+
+22
+            scanf("%d", &amount);
+23
+
+24
+            balance += amount;
+25
+
+26
+            printf("%d\n", balance);
+27
+
+28
+            break;
+29
+
+30
+        case 2: 
+31
+
+32
+            scanf("%d", &amount);
+33
+
+34
+            if(amount > balance) {
+35
+
+36
+                printf("Insufficient Balance\n");
+37
+
+38
+            } else {
+39
+
+40
+                balance -= amount;
+41
+
+42
+                printf("%d\n", balance);
+43
+
+44
+            }
+45
+
+46
+            break;
+47
+
+48
+        default:
+49
+
+50
+            printf("Invalid Input\n");
+51
+
+52
+    }
+53
+ 
+54
+    return 0;
+55
+}
+56
