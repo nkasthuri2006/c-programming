@@ -1,0 +1,140 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+
+6
+int main() {
+7
+
+8
+    int day;
+9
+
+10
+    scanf("%d", &day);
+11
+
+12
+    switch(day) {
+13
+
+14
+        case 1:
+15
+
+16
+            printf("Monday\n");
+17
+
+18
+            break;
+19
+
+20
+        case 2:
+21
+
+22
+            printf("Tuesday\n");
+23
+
+24
+            break;
+25
+
+26
+        case 3:
+27
+
+28
+            printf("Wednesday\n");
+29
+
+30
+            break;
+31
+
+32
+        case 4:
+33
+
+34
+            printf("Thursday\n");
+35
+
+36
+            break;
+37
+
+38
+        case 5:
+39
+
+40
+            printf("Friday\n");
+41
+
+42
+            break;
+43
+
+44
+        case 6:
+45
+
+46
+            printf("Saturday\n");
+47
+
+48
+            break;
+49
+
+50
+        case 7:
+51
+
+52
+            printf("Sunday\n");
+53
+
+54
+            break;
+55
+
+56
+        default:
+57
+
+58
+            printf("Enter a valid Input\n");
+59
+
+60
+            break;
+61
+
+62
+    }
+63
+
+64
+    return 0;
+65
+
+66
+}
+67
+
+68
+
+69
+
+70
+    
+71
