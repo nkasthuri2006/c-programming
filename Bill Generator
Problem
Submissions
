@@ -1,0 +1,60 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+
+6
+int main() {
+7
+
+8
+    int piz, puf, cool;
+9
+
+10
+    int piz_price=100, puf_price=20,cool_price=10;
+11
+
+12
+    scanf("%d\n%d\n%d\n",&piz,&puf,&cool);
+13
+
+14
+    int total;
+15
+
+16
+    total=piz*piz_price+puf*puf_price+cool*cool_price;
+17
+
+18
+    printf("Bill Details\n");
+19
+
+20
+    printf("No of pizzas:%d\n",piz);
+21
+
+22
+    printf("No of puffs:%d\n",puf);
+23
+
+24
+    printf("No of cooldrinks:%d\n",cool);
+25
+
+26
+    printf("Total price=%d\n",total);
+27
+
+28
+    printf("ENJOY THE SHOW!!!");
+29
+    return 0;
+30
+}
+31
