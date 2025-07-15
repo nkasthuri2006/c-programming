@@ -1,0 +1,50 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+
+6
+int main() {
+7
+    int n, i, address, found = 0;
+8
+    scanf("%d", &n); 
+9
+    int doors[n];
+10
+    for (i = 0; i < n; i++) {
+11
+        scanf("%d", &doors[i]); 
+12
+    }
+13
+    scanf("%d", &address);  
+14
+    for (i = 0; i < n; i++) {
+15
+        if (doors[i] == address) {
+16
+            printf("Door Number is %03d-DN\n", i); 
+17
+            found = 1;
+18
+            break;
+19
+        }
+20
+    }
+21
+    if (!found) {
+22
+        printf("-1\n");
+23
+    }
+24
+    return 0;
+25
+}
+26
