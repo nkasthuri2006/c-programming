@@ -1,0 +1,52 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+int main() {
+6
+    int num, originalNum, remainder, result = 0, digits = 0;
+7
+    scanf("%d", &num);
+8
+    originalNum = num;
+9
+    int temp = num;
+10
+    while (temp != 0) {
+11
+        temp /= 10;
+12
+        digits++;
+13
+    }
+14
+    temp = num;
+15
+    while (temp != 0) {
+16
+        remainder = temp % 10;
+17
+        result += pow(remainder, digits);
+18
+        temp /= 10;
+19
+    }
+20
+    if (result == originalNum)
+21
+        printf("Yes\n");
+22
+    else
+23
+        printf("No\n");
+24
+    return 0;
+25
+} 
+26
+
+27
