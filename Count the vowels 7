@@ -1,0 +1,66 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+
+6
+int main() {
+7
+
+8
+    
+9
+
+10
+    char str[100];
+11
+
+12
+    int i, count = 0;
+13
+
+14
+    fgets(str, sizeof(str), stdin);
+15
+
+16
+    for (i = 0; str[i] != '\0'; i++) {
+17
+
+18
+    char ch = tolower(str[i]);
+19
+
+20
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+21
+
+22
+    count++;
+23
+
+24
+}
+25
+
+26
+ }
+27
+
+28
+    printf("%d\n", count);
+29
+
+30
+    return 0;
+31
+
+32
+    }
+33
+    
+34
