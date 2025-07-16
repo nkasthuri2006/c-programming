@@ -1,0 +1,78 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+
+6
+int main() {
+7
+
+8
+
+9
+char str[100], result[100];
+10
+
+11
+int i = 0, j = 0;
+12
+
+13
+    fgets(str, sizeof(str), stdin);
+14
+
+15
+    while (str[i] != '\0') 
+16
+
+17
+    {
+18
+
+19
+if (str[i] != ' ') 
+20
+
+21
+{
+22
+
+23
+result[j] = str[i];
+24
+
+25
+j++;
+26
+
+27
+}
+28
+
+29
+        i++;
+30
+
+31
+    }
+32
+
+33
+    result[j] = '\0';
+34
+
+35
+    printf("%s", result);
+36
+
+37
+
+38
+    return 0;
+39
+}
+40
