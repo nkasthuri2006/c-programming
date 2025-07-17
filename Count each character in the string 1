@@ -1,0 +1,126 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+
+6
+
+7
+int main() {
+8
+
+9
+
+10
+    char str[100];
+11
+
+12
+    int i, j, count;
+13
+
+14
+    
+15
+
+16
+    scanf("%s", str);
+17
+
+18
+    
+19
+
+20
+    for (i = 0; str[i] != '\0'; i++) {
+21
+
+22
+        count = 1;
+23
+
+24
+        
+25
+
+26
+        for (j = 0; j < i; j++) {
+27
+
+28
+            if (str[i] == str[j]) {
+29
+
+30
+                count = 0;
+31
+
+32
+                break;
+33
+
+34
+            }
+35
+
+36
+        }
+37
+
+38
+        
+39
+
+40
+        if (count != 0) {
+41
+
+42
+            count = 0;
+43
+
+44
+            for (j = 0; str[j] != '\0'; j++) {
+45
+
+46
+                if (str[i] == str[j]) {
+47
+
+48
+                    count++;
+49
+
+50
+                }
+51
+
+52
+            }
+53
+
+54
+            printf("%c   %d\n", str[i], count);
+55
+
+56
+        }
+57
+
+58
+    }
+59
+
+60
+
+61
+    return 0;
+62
+
+63
+}
+64
