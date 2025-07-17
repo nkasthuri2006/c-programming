@@ -1,0 +1,90 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+
+6
+
+7
+int isVowel(char ch) {
+8
+
+9
+    ch = (ch >= 'A' && ch <= 'Z') ? ch + 32 : ch; // convert to lowercase if uppercase
+10
+
+11
+    return (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u');
+12
+
+13
+}
+14
+
+15
+int main() {
+16
+
+17
+    char str[100], result[100];
+18
+
+19
+    int i, j = 0;
+20
+
+21
+    // Input
+22
+
+23
+    fgets(str, sizeof(str), stdin);
+24
+
+25
+    // Remove vowels
+26
+
+27
+    for (i = 0; str[i] != '\0'; i++) {
+28
+
+29
+        if (!isVowel(str[i])) {
+30
+
+31
+            result[j++] = str[i];
+32
+
+33
+        }
+34
+
+35
+    }
+36
+
+37
+    result[j] = '\0'; // Null-terminate the result string
+38
+
+39
+    // Output
+40
+
+41
+    printf("%s", result);
+42
+
+43
+    return 0;
+44
+
+45
+}
+46
