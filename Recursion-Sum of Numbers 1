@@ -1,0 +1,50 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+int recursiveSum(int n) {
+6
+    if (n == 1)
+7
+        return 1;
+8
+    else
+9
+        return n + recursiveSum(n - 1);
+10
+}
+11
+int main() {
+12
+    int n;
+13
+    scanf("%d", &n);
+14
+    if (n >= 1 && n <= 50) {
+15
+        int sum = recursiveSum(n);
+16
+        printf("The sum of numbers from 1 to %d : %04d\n", n, sum);
+17
+    } else {
+18
+
+19
+        printf("Enter a Valid Input!!!!!!!!!!!!!!!!!!\n");
+20
+    }
+21
+
+22
+    return 0;
+23
+
+24
+}
+25
+
+26
