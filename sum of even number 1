@@ -1,0 +1,46 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+
+6
+int main() {
+7
+    int n, m, sum = 0;
+8
+    scanf("%d", &n);
+9
+    scanf("%d", &m);
+10
+    if (n <= 0 || m <= 0 || n >= 30 || m >= 30 || n > m) {
+11
+        printf("Invalid Input\n");
+12
+        return 0;
+13
+    }
+14
+    for (int i = n; i <= m; i++) {
+15
+        if (i % 2 == 0) {
+16
+            sum += i;
+17
+        }
+18
+}
+19
+    printf("%d\n", sum);
+20
+    return 0;
+21
+}
+22
+
+23
+
+24
