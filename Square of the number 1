@@ -1,0 +1,48 @@
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+struct Calculator {
+6
+    int (*square)(int);
+7
+};
+8
+int calculateSquare(int n) {
+9
+    return n * n;
+10
+}
+11
+int main() {
+12
+    int n;
+13
+    scanf("%d", &n);
+14
+    if (n >= 1 && n <= 9) {
+15
+        struct Calculator calc;
+16
+        calc.square = calculateSquare; 
+17
+        int result = calc.square(n);
+18
+        printf("Square of %d is %d\n", n, result);
+19
+    } else {
+20
+        printf("Invalid Input\n");
+21
+    }
+22
+    return 0;
+23
+}
+24
+
+25
